@@ -2,6 +2,6 @@
 !MCVersionReader class methodsFor: 'reading'!
 file: fileName streamDo: aBlock
 	| file |
-	^ 	[file _ FileStream readOnlyFileNamed: fileName.
+	^ 	[file _ MCPlatformSupport readOnlyFileStreamNamed: fileName.
 		aBlock value: file]
 			ensure: [file close]! !

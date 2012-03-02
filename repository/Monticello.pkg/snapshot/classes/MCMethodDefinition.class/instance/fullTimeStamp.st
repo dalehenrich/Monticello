@@ -1,4 +1,4 @@
 
 !MCMethodDefinition methodsFor: 'accessing'!
 fullTimeStamp
-	^TimeStamp fromMethodTimeStamp: timeStamp! !
+	^MCPlatformSupport fromMethodTimeStamp: timeStamp! !

@@ -1,4 +1,4 @@
 
 !MCVersion methodsFor: 'accessing'!
 writerClass
-	^ MCMczWriter ! !
+	^ MCMczWriter! !

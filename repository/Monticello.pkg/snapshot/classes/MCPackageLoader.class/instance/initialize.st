@@ -3,5 +3,4 @@
 initialize
 	additions _ OrderedCollection new.
 	removals _ OrderedCollection new.
-	obsoletions _ Dictionary new.
-! !
+	obsoletions _ Dictionary new.! !

@@ -1,4 +1,4 @@
 
 !MCPatchOperation methodsFor: 'accessing'!
 annotations
-	^self annotations: Preferences defaultAnnotationRequests! !
+	^self annotations: MCPlatformSupport defaultAnnotationRequests! !

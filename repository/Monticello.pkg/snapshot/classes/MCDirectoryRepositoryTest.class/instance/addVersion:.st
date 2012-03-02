@@ -1,7 +1,7 @@
 
 !MCDirectoryRepositoryTest methodsFor: 'as yet unclassified'!
-addVersion: aVersion
-	| file |
-	file _ FileStream newFileNamed: (directory fullNameFor: aVersion fileName).
-	aVersion fileOutOn: file.
-	file close.! !
+addVersion: aVersion 
+	MCPlatformSupport
+		writeStreamForFileNamed: (directory fullNameFor: aVersion fileName)
+		replace: false
+		do: [:file | aVersion fileOutOn: file]! !

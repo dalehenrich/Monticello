@@ -1,5 +1,4 @@
 
 !MCStWriter methodsFor: 'visiting'!
 visitOrganizationDefinition: defintion
-	defintion categories do: [:cat | self writeCategory: cat].
-! !
+	defintion categories do: [:cat | self writeCategory: cat].! !

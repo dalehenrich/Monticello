@@ -2,4 +2,8 @@
 !MCFileInTest methodsFor: 'running'!
 tearDown
 	(diff isNil or: [diff isEmpty not])
-		 ifTrue: [expected updatePackage: self mockPackage]! !
+		 ifTrue: [
+			MCPlatformSupport suspendAutoCommitAndMigrationDuring: [ 
+				expected updatePackage: self mockPackage ]].
+	super tearDown.
+! !

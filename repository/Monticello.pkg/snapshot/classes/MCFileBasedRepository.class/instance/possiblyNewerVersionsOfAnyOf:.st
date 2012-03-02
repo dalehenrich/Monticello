@@ -4,9 +4,12 @@ possiblyNewerVersionsOfAnyOf: someVersions
 	| pkgs |
 	pkgs := Dictionary new.
 
-	someVersions do: [:aVersionInfo |
-		pkgs at: (aVersionInfo name copyUpToLast: $-)
-			put: (aVersionInfo name copyAfterLast: $.) asNumber].
+	someVersions do: [:aVersionInfo | | pName pVersion ver |
+		pName := aVersionInfo name copyUpToLast: $-.
+		pVersion := (aVersionInfo name copyAfterLast: $.) asNumber.
+		ver := pkgs at: pName ifAbsent: [ nil ].
+		(ver == nil or: [ pVersion > ver ])
+			ifTrue: [ pkgs at: pName put: pVersion ]].
 
 	^[self allVersionNames select: [:each |
 		(pkgs at: (each copyUpToLast: $-) ifPresent: [:verNumber |

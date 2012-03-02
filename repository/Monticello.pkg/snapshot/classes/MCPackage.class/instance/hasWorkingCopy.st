@@ -1,4 +1,4 @@
 
-!MCPackage methodsFor: 'as yet unclassified'!
+!MCPackage methodsFor: 'testing'!
 hasWorkingCopy
 	^ MCWorkingCopy registry includesKey: self! !

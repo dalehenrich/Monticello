@@ -1,7 +1,12 @@
 
 !MCPackageLoader methodsFor: 'private'!
 analyze
-	| sorter |
+	| sorter index |
+	index := MCDefinitionIndex definitions: additions.
+	removals removeAllSuchThat: [:removal |
+		(index definitionLike: removal
+			ifPresent: [:addition | obsoletions at: addition put: removal]
+			ifAbsent: []) notNil].
 	sorter _ self sorterForItems: additions.
 	additions _ sorter orderedItems.
 	requirements _ sorter externalRequirements.

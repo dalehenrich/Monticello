@@ -1,4 +1,4 @@
 
-!MCMockClassA methodsFor: 'boolean'!
+!MCMockClassA methodsFor: 'numeric'!
 truth
 	^ true! !

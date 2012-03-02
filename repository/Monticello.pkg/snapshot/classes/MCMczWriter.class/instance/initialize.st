@@ -1,5 +1,4 @@
 
 !MCMczWriter methodsFor: 'initializing'!
 initialize
-	zip _ ZipArchive new.
-! !
+	zip _ ZipArchive new.! !

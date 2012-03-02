@@ -1,7 +1,7 @@
 
 !MCStWriterTest methodsFor: 'asserting'!
 assertChunkIsWellFormed: chunk
-	Parser new
+	MCPlatformSupport
 		parse: chunk readStream 
 		class: UndefinedObject 
 		noPattern: true

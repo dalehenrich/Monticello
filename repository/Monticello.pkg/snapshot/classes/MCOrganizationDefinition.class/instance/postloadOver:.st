@@ -1,7 +1,9 @@
 
-!MCOrganizationDefinition methodsFor: 'as yet unclassified'!
+!MCOrganizationDefinition methodsFor: 'installing'!
 postloadOver: oldDefinition
+"
 	SystemOrganization categories:
 		(self
 			reorderCategories: SystemOrganization categories
-			original: (oldDefinition ifNil: [#()] ifNotNil: [oldDefinition categories]))! !
+			original: (oldDefinition ifNil: [#()] ifNotNil: [oldDefinition categories]))
+"! !

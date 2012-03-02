@@ -1,7 +1,0 @@
-
-!MCWorkingCopyBrowser methodsFor: 'morphic ui'!
-editScript: scriptSymbol
-
-| script |
-script _ workingCopy packageInfo perform: scriptSymbol.
-script openLabel: scriptSymbol asString, ' of the Package ', workingCopy package name.! !

@@ -7,4 +7,4 @@ testClassMethodDefinition
 	self assert: stream nextChunk isAllSeparators.
 	self assertChunkIsWellFormed: stream nextChunk.
 	self assertMethodChunkIsWellFormed: stream nextChunk.
-	self assert: stream nextChunk isAllSeparators ! !
+	self assert: stream nextChunk isAllSeparators! !

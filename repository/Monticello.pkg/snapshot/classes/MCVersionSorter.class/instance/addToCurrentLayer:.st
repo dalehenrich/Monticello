@@ -12,4 +12,4 @@ addToCurrentLayer: aVersionInfo
 		layer add: aVersionInfo.
 		depths at: aVersionInfo put: depthIndex.
 		^ true].
-	^ false ! !
+	^ false! !

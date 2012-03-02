@@ -1,4 +1,3 @@
 
 !MCDefinition methodsFor: 'installing'!
-load
-	! !
+load! !

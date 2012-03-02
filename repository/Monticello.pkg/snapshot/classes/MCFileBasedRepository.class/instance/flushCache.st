@@ -1,4 +1,8 @@
 
 !MCFileBasedRepository methodsFor: 'as yet unclassified'!
 flushCache
-	cache _ nil! !
+	| count |
+	cache == nil ifTrue: [ ^0 ].
+	count := cache keys size.
+	cache _ nil.
+	^count! !

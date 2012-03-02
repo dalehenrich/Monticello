@@ -12,5 +12,4 @@ handleConflict: aConflict
 		ifFalse:
 			[l > r
 				ifTrue: [aConflict chooseLocal]
-				ifFalse: [aConflict chooseRemote]]
-		! !
+				ifFalse: [aConflict chooseRemote]]! !

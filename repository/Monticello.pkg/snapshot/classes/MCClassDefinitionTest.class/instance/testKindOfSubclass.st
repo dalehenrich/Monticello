@@ -1,9 +1,9 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testKindOfSubclass
 	| classes d |
-	classes _ {self mockClassA. String. MethodContext. WeakArray. Float}.
+	classes := (Array with: self mockClassA with: String with: MethodContext with: Float).
 	classes do: [:c |
-		d _  c asClassDefinition.
+		d :=  c asClassDefinition.
 		self assert: d kindOfSubclass = c kindOfSubclass.
 	].! !

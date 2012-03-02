@@ -16,5 +16,4 @@ loadDefinitions
 		definitions addAll: (self methodDefinitionsFor: pseudoClass metaClass)].
 	filePackage doIts do:
 		[:ea |
-		self addDefinitionsFromDoit: ea string].
-	! !
+		self addDefinitionsFromDoit: ea string].! !

@@ -7,6 +7,6 @@ infoWithName: nameString message: messageString
 		message: messageString
 		date: Date today
 		time: Time now
-		author: Utilities authorInitials
+		author: MCPlatformSupport authorInitials
 		ancestors: ancestors asArray
 		stepChildren: self stepChildren asArray! !

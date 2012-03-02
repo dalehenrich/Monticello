@@ -1,8 +1,8 @@
 
 !MCMethodDefinition methodsFor: 'accessing'!
 load
-	self actualClass
-		compile: source
+	MCPlatformSupport
+		compile: self actualClass
+		source: source
 		classified: category
-		withStamp: timeStamp
-		notifying: (SyntaxError new category: category)! !
+		withStamp: timeStamp! !

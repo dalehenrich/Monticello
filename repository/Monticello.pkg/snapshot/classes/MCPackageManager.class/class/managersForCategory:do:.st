@@ -1,10 +1,9 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
+!MCPackageManager class methodsFor: 'private'!
 managersForCategory: aSystemCategory do: aBlock
-	"Got to be careful here - we might get method categories where capitalization is problematic."
 	| cat foundOne index |
 	foundOne := false.
-	cat := aSystemCategory ifNil:[^nil]. "yes this happens; for example in eToy projects"
+	cat := aSystemCategory ifNil:[^nil].
 	"first ask PackageInfos, their package name might not match the category"
 	self registry do: [:mgr | 
 		(mgr packageInfo includesSystemCategory: aSystemCategory)	ifTrue: [
@@ -25,5 +24,5 @@ managersForCategory: aSystemCategory do: aBlock
 	].
 	foundOne ifFalse:[
 		"Create a new (but only top-level)"
-		aBlock value: (MCWorkingCopy forPackage: (MCPackage named: (aSystemCategory upTo: $-) capitalized)).
+		aBlock value: (MCWorkingCopy forPackage: (MCPackage named: (aSystemCategory copyUpTo: $-) capitalized)).
 	].! !

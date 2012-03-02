@@ -2,10 +2,12 @@
 !MCSnapshotTest methodsFor: 'tests'!
 testInstanceReuse
 	| x m n y |
-	x _ (MCPackage new name: self mockCategoryName) snapshot.
-	Smalltalk garbageCollect.
-	n _ MCDefinition allSubInstances size.
-	y _ (MCPackage new name: self mockCategoryName) snapshot.
-	Smalltalk garbageCollect.
-	m _ MCDefinition allSubInstances size.
-	self assert: m = n! !
+"
+	x := (MCPackage new name: self mockCategoryName) snapshot.
+	MCPlatformSupport garbageCollect.
+	n := MCDefinition allSubInstances size.
+	y := (MCPackage new name: self mockCategoryName) snapshot.
+	MCPlatformSupport garbageCollect.
+	m := MCDefinition allSubInstances size.
+	self assert: m = n
+"! !

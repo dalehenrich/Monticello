@@ -1,8 +1,6 @@
 
 !MCVersionSorter methodsFor: 'as yet unclassified'!
 processVersionInfo: aVersionInfo
-	(self addToCurrentLayer: aVersionInfo) ifTrue:
-		[self pushLayer.
-		(self knownAncestorsOf: aVersionInfo) do: [:ea | self processVersionInfo: ea].
-		self popLayer]
-! !
+	| queue |
+	queue := OrderedCollection with: aVersionInfo.
+	[ queue isEmpty ] whileFalse: [ self processStackEntry: queue removeLast for: queue ].! !

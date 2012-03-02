@@ -1,4 +1,4 @@
 
 !MethodReference methodsFor: '*monticello'!
 timeStamp
-	^ self compiledMethod timeStamp! !
+	^ self actualClass stampForMethod: methodSymbol! !

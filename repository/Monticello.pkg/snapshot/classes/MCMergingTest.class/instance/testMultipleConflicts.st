@@ -6,5 +6,4 @@ testMultipleConflicts
 				base: #(a1 b1 c2)
 				
 				gives: #(a1 b3 d1)
-				conflicts: #((removed c1) (b2 b3))
-! !
+				conflicts: #((removed c1) (b2 b3))! !

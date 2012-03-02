@@ -6,10 +6,9 @@ selector: selectorString
 category: catString
 timeStamp: timeString
 source: sourceString
-	className _ classString asSymbol.
-	selector _ selectorString asSymbol.
-	category _ catString asSymbol.
-	timeStamp _ timeString.
-	classIsMeta _ metaBoolean.
-	source _ sourceString withSqueakLineEndings.
-! !
+	className := classString asSymbol.
+	selector := selectorString asSymbol.
+	category := catString asSymbol.
+	timeStamp := timeString.
+	classIsMeta := metaBoolean.
+	source := sourceString withSqueakLineEndings.! !

@@ -1,5 +1,4 @@
 
 !MCPackageLoader methodsFor: 'private'!
 warnAboutErrors
-	self notify: self errorDefinitionWarning.
-! !
+	self notify: self errorDefinitionWarning.! !

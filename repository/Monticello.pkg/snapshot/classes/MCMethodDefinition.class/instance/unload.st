@@ -4,5 +4,5 @@ unload
 	| previousVersion |
 	self isOverrideMethod ifTrue: [previousVersion _ self scanForPreviousVersion].
 	previousVersion
-		ifNil: [self actualClass ifNotNilDo: [:class | class removeSelector: selector]]
-		ifNotNil: [previousVersion fileIn] ! !
+		ifNil: [self actualClass ifNotNilDo: [:class | class removeSelector: selector ifAbsent: []]]
+		ifNotNil: [previousVersion fileIn]! !

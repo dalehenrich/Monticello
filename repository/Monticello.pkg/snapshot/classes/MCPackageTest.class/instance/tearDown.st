@@ -1,4 +1,6 @@
 
 !MCPackageTest methodsFor: 'running'!
 tearDown
-	self mockSnapshot install! !
+	self restoreMocks.
+	super tearDown.
+! !

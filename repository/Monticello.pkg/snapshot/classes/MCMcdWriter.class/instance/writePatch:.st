@@ -10,5 +10,4 @@ writePatch: aPatch
 		ea isAddition ifTrue: [new add: ea definition].
 		ea isModification ifTrue: [old add: ea baseDefinition. new add: ea definition]].
 	self writeOldDefinitions: old.
-	self writeNewDefinitions: new.
-	self addString: (self serializeInBinary: aPatch) at: 'patch.bin'.! !
+	self writeNewDefinitions: new.! !

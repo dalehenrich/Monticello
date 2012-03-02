@@ -3,14 +3,9 @@
 useChangeSetNamed: baseName during: aBlock
 	"Use the named change set, or create one with the given name."
 	| changeHolder oldChanges newChanges |
-	changeHolder _ (ChangeSet respondsTo: #newChanges:)
-						ifTrue: [ChangeSet]
-						ifFalse: [Smalltalk].
-	oldChanges _ (ChangeSet respondsTo: #current)
-						ifTrue: [ChangeSet current]
-						ifFalse: [Smalltalk changes].
+	changeHolder := ChangeSet.
+	oldChanges := ChangeSet current.
 
-	newChanges _ (ChangeSorter changeSetNamed: baseName) ifNil: [ ChangeSet new name: baseName ].
+	newChanges := ChangeSet new name: baseName .
 	changeHolder newChanges: newChanges.
-	[aBlock value] ensure: [changeHolder newChanges: oldChanges].
-! !
+	[aBlock value] ensure: [changeHolder newChanges: oldChanges].! !

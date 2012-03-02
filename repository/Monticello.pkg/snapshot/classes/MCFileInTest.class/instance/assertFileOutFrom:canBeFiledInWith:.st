@@ -5,5 +5,4 @@ assertFileOutFrom: writerClass canBeFiledInWith: aBlock
 	self alterInitialState.
 	self assertSuccessfulLoadWith: aBlock.
 	self mockPackage unload.
-	self assertSuccessfulLoadWith: aBlock.
-! !
+	self assertSuccessfulLoadWith: aBlock.! !

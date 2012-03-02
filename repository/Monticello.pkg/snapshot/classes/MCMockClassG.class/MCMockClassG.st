@@ -1,5 +1,5 @@
 
-Object variableWordSubclass: #MCMockClassG
+Object subclass: #MCMockClassG
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''

@@ -1,5 +1,5 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
+!MCPackageManager class methodsFor: 'private'!
 managersForClass: aClass do: aBlock
 
 	self registry do: [:mgr |

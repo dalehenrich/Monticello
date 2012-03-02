@@ -1,6 +1,6 @@
 
-!MCSnapshotBrowser methodsFor: 'listing'!
+!MCSnapshotBrowser methodsFor: 'message list'!
 visibleMethods
-	^ classSelection 
+	^ self selectedClassName
 		ifNil: [#()]
 		ifNotNil: [self methodsForSelectedProtocol]! !

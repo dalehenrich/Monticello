@@ -1,11 +1,6 @@
 
-!MCChangeNotificationTest methodsFor: 'events'!
+!MCChangeNotificationTest methodsFor: 'private'!
 modifiedEventFor: aSelector ofClass: aClass
 	| method |
 	method := aClass compiledMethodAt: aSelector.
-	^ ModifiedEvent 
-				methodChangedFrom: method
-				to: method
-				selector: aSelector
-				inClass: aClass.
-! !
+	^ MethodModifiedAnnouncement itemClass: aClass method: method! !

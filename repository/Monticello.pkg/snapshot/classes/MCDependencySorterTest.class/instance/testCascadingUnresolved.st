@@ -7,4 +7,4 @@ testCascadingUnresolved
 		(c () ()))
 	orderAs: #(c)
 	withRequired: #(z)
-	toLoad: #(a b)	! !
+	toLoad: #(a b)! !

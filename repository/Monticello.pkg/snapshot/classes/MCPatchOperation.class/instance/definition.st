@@ -1,4 +1,4 @@
 
 !MCPatchOperation methodsFor: 'accessing'!
 definition
-	^ self subclassResponsibility ! !
+	^ self subclassResponsibility! !

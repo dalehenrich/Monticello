@@ -1,9 +1,10 @@
 
-!MCSnapshotBrowser methodsFor: 'listing'!
+!MCSnapshotBrowser methodsFor: 'message category list'!
 visibleProtocols
 	| methods protocols |
-	self switchIsComment ifTrue: [^ Array new].
-	methods _ self methodsForSelectedClass.
-	protocols _ (methods collect: [:ea | ea category]) asSet asSortedCollection.
-	(protocols size > 1) ifTrue: [protocols add: '-- all --'].
-	^ protocols ! !
+	self classCommentIndicated
+		ifTrue: [^ Array new].
+	methods := self methodsForSelectedClass.
+	protocols := (methods
+				collect: [:ea | ea category]) asSet asSortedCollection.
+	^ protocols! !

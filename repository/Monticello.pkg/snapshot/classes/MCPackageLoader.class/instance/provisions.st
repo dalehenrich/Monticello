@@ -1,4 +1,4 @@
 
 !MCPackageLoader methodsFor: 'private'!
 provisions
-	^ provisions ifNil: [provisions _ Set withAll: Smalltalk keys]! !
+	^ provisions ifNil: [provisions _ MCPlatformSupport smalltalkKeys]! !

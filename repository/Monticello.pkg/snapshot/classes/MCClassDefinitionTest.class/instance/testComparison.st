@@ -1,5 +1,5 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testComparison
 	| d1 d2 d3 d4 |
 	d1 _ self mockClass: 'A' super: 'X'.

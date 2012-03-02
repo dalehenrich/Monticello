@@ -1,4 +1,4 @@
 
 !MCVersionInfo methodsFor: 'pillaging'!
 id
-	^ id ! !
+	^ id! !

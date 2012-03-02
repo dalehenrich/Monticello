@@ -1,5 +1,5 @@
 
 !MCDefinition class methodsFor: 'as yet unclassified'!
 clearInstances
-	WeakArray removeWeakDependent: Instances.
+	MCPlatformSupport removeWeakArrayDependent: Instances.
 	Instances _ nil! !

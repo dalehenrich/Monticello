@@ -5,5 +5,4 @@ versionReaderForFileNamed: aString do: aBlock
 		readStreamForFileNamed: aString
 		do: [:s |
 			(MCVersionReader readerClassForFileNamed: aString) ifNotNilDo:
-				[:class | aBlock value: (class on: s fileName: aString)]]
-! !
+				[:class | aBlock value: (class on: s)]]! !

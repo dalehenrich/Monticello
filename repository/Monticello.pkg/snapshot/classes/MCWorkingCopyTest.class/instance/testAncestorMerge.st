@@ -11,5 +11,4 @@ testAncestorMerge
 	self change: #c toReturn: 'c1'.
 	revC _  self snapshot.	
 
-	self should: [self basicMerge: revA] raise: MCNoChangesException.
-	! !
+	self should: [self basicMerge: revA] raise: MCNoChangesException.! !

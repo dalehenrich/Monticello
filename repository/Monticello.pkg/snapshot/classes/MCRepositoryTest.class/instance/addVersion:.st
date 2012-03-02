@@ -1,4 +1,4 @@
 
 !MCRepositoryTest methodsFor: 'actions'!
 addVersion: aVersion
-	self subclassResponsibility ! !
+	self subclassResponsibility! !

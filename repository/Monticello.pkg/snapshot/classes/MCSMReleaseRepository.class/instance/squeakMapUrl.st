@@ -1,5 +1,4 @@
 
 !MCSMReleaseRepository methodsFor: 'as yet unclassified'!
 squeakMapUrl 
-	^ 'http://localhost:9070/sm'
-! !
+	^ 'http://localhost:9070/sm'! !

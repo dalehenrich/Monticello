@@ -19,5 +19,4 @@ MCMethodDeclaration className: #MCMockClassD selector: #one category: #''as yet 
 ''one
 	^ 1''!!!!
 ''
-'
-! !
+'! !

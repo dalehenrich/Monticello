@@ -8,4 +8,4 @@ processVersionInfo: aVersionInfo
 				[:ea | self processVersionInfo: ea].
 	self popLayer.
 	success ifTrue: [self addToCurrentLayer: aVersionInfo].
-	^ success	! !
+	^ success! !

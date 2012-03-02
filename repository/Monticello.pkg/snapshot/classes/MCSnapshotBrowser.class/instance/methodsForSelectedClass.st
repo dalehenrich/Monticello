@@ -1,6 +1,13 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'message category list'!
 methodsForSelectedClass
-	^ items select: [:ea | (ea className = classSelection) 
-									and: [ea isMethodDefinition]
-									and: [ea classIsMeta = self switchIsClass]].! !
+	"Answer the selected category of messages."
+
+	classListIndex = 0
+		ifTrue: [^ Array new]
+		ifFalse: [	 | classSelection |
+			classSelection := self selectedClassName.
+			^ self definitions
+				select: [:ea | ea isMethodDefinition
+						and: [ea className = classSelection]
+						and: [ea classIsMeta = self metaClassIndicated]]]! !

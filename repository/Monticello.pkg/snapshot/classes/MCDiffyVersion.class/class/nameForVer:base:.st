@@ -1,5 +1,5 @@
 
-!MCDiffyVersion class methodsFor: 'name utilities'!
+!MCDiffyVersion class methodsFor: 'instance creation'!
 nameForVer: versionName base: baseName
 	| baseId |
 	baseId := (versionName copyUpToLast: $.) = (baseName copyUpToLast: $.)

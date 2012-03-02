@@ -3,5 +3,4 @@
 assertSnapshot: actual matches: expected
 	| diff |
 	diff _ actual patchRelativeToBase: expected.
-	self assert: diff isEmpty
-! !
+	self assert: diff isEmpty! !

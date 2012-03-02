@@ -2,7 +2,7 @@
 !MCStWriterTest methodsFor: 'data'!
 expectedMethodDefinitionWithBangs
 	^ '
-!!MCStWriterTest methodsFor: ''testing'' stamp: ''cwp 8/9/2003 14:55''!!
+!!MCStWriterTest methodsFor: ''testing'' stamp: ''dkh 08/09/2007 10:57''!!
 methodWithBangs
 	^ ''
 	^ ReadStream on: 
@@ -22,6 +22,5 @@ MCMethodDeclaration className: #MCMockClassD selector: #one category: #''''as ye
 ''''one
 	^ 1''''!!!!!!!!
 ''''
-''
-!! !!
+''!! !!
 '! !

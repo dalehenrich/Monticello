@@ -7,5 +7,4 @@ defaultCommentStamp
 
 	^ (Smalltalk at: name ifPresent: [:c | c organization commentStamp])
 		ifNil: ['']
-	"
-! !
+	"! !

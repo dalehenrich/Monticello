@@ -1,4 +1,4 @@
 
 !MCDefinition methodsFor: 'comparing'!
 sortKey
-	self subclassResponsibility ! !
+	self subclassResponsibility! !

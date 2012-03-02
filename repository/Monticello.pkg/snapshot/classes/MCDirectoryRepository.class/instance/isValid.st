@@ -1,4 +1,7 @@
 
 !MCDirectoryRepository methodsFor: 'as yet unclassified'!
 isValid
-	^directory exists! !
+	| res |
+	res := GsFile _isDirectory: directory pathString onClient: self onClient.
+	res == nil ifTrue: [ ^false ].
+	^res! !

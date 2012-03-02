@@ -6,4 +6,4 @@ assertNumberWhenSavingTo: aRepository is: aNumber
 	[aRepository storeVersion: workingCopy newVersion]
 		on: MCVersionNameAndMessageRequest
 		do: [:n | name _ n suggestedName. n resume: (Array with: name with: '')].
-	self assert: name = (self packageName, '-', Utilities authorInitials, '.', aNumber asString)! !
+	self assert: name = (self packageName, '-', MCPlatformSupport authorInitials, '.', aNumber asString)! !

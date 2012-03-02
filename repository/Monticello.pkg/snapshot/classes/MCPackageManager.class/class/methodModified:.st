@@ -1,4 +1,4 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
-methodModified: anEvent
-	^self managersForClass: anEvent itemClass selector: anEvent itemSelector do:[:mgr| mgr modified: true].! !
+!MCPackageManager class methodsFor: 'notifications'!
+methodModified: aSystemChangeAnnouncement
+	^self managersForClass: aSystemChangeAnnouncement itemClass selector: aSystemChangeAnnouncement itemSelector do:[:mgr| mgr modified: true].! !

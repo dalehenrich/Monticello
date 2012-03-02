@@ -1,11 +1,9 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'message list'!
 methodsForSelectedProtocol
-	| methods |
-	protocolSelection ifNil: [^ Array new].
-	methods _ self methodsForSelectedClass asOrderedCollection.
-	(protocolSelection = '-- all --') 
-		ifFalse: [methods removeAllSuchThat: [:ea | ea category ~= protocolSelection]].
-	^ methods 
-	
-								! !
+	| methods protocolSelection |
+	(protocolSelection := self messageCategoryListSelection)
+		ifNil: [^ Array new].
+	methods := self methodsForSelectedClass asOrderedCollection.
+	methods removeAllSuchThat: [:ea | ea category ~= protocolSelection].
+	^ methods! !

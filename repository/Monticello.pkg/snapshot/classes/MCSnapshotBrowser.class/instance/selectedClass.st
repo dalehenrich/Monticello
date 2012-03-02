@@ -1,6 +1,7 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'class list'!
 selectedClass
-	classSelection ifNil: [ ^nil ].
-	^Smalltalk at: classSelection ifAbsent: [ nil ].
-! !
+	"Answer the class that is currently selected. Answer nil if no selection 
+	exists."
+
+	^self selectedClassDefinition! !

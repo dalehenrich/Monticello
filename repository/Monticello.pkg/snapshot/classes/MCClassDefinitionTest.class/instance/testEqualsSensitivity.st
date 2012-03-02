@@ -1,5 +1,5 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testEqualsSensitivity
 	| message a b defA args defB |
 	message _ self creationMessage.

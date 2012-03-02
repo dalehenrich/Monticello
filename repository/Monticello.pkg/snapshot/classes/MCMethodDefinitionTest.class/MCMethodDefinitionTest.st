@@ -1,6 +1,6 @@
 
 MCTestCase subclass: #MCMethodDefinitionTest
-	instanceVariableNames: 'navigation isModified'
+	instanceVariableNames: 'navigation'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Monticello-Tests'!

@@ -2,7 +2,7 @@
 !MCStReader methodsFor: 'as yet unclassified'!
 classDefinitionFrom: aPseudoClass
 	| tokens |
-	tokens _ Scanner new scanTokens: aPseudoClass definition.
+	tokens := Scanner new scanTokens: aPseudoClass definition.
 	tokens size = 11 ifFalse: [self error: 'Unrecognized class definition'].
 	^ MCClassDefinition
 		name: (tokens at: 3)

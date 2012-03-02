@@ -1,10 +1,15 @@
 
 !MCWorkingCopyTest methodsFor: 'running'!
 clearPackageCache
-	| dir |
-	dir _ MCCacheRepository default directory.
-	(dir fileNamesMatching: 'MonticelloMocks*') do: [:ea | dir deleteFileNamed: ea].
-	(dir fileNamesMatching: 'MonticelloTest*') do: [:ea | dir deleteFileNamed: ea].
-	(dir fileNamesMatching: 'rev*') do: [:ea | dir deleteFileNamed: ea].
-	(dir fileNamesMatching: 'foo-*') do: [:ea | dir deleteFileNamed: ea].
-	(dir fileNamesMatching: 'foo2-*') do: [:ea | dir deleteFileNamed: ea].! !
+	| cache dir |
+	cache := MCCacheRepository default.
+	dir :=  cache directory.
+	dir ~~ nil
+		ifTrue: [
+			"MCCacheRepository expected"
+			(dir fileNamesMatchingPattern: #( #('MonticelloMocks' $*) )) do: [:ea | dir deleteFileNamed: ea].
+			(dir fileNamesMatchingPattern: #( #('MonticelloTest' $*) )) do: [:ea | dir deleteFileNamed: ea].
+			(dir fileNamesMatchingPattern: #( #('rev' $*) )) do: [:ea | dir deleteFileNamed: ea]]
+		ifFalse: [ 
+			"MCDictionaryRepository expected - GemStone"
+			cache flushCache ].! !

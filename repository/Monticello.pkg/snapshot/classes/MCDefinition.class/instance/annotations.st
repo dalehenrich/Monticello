@@ -1,4 +1,4 @@
 
 !MCDefinition methodsFor: 'annotations'!
 annotations
-	^self annotations: Preferences defaultAnnotationRequests! !
+	^self annotations: MCPlatformSupport defaultAnnotationRequests! !

@@ -1,4 +1,5 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'class list'!
 packageClasses
-	^ items select: [:ea | ea isClassDefinition]! !
+	^ self definitions
+		select: [:ea | ea isClassDefinition]! !

@@ -1,6 +1,6 @@
 
-MCCodeTool subclass: #MCSnapshotBrowser
-	instanceVariableNames: 'categorySelection classSelection protocolSelection methodSelection switch'
+Browser subclass: #MCSnapshotBrowser
+	instanceVariableNames: 'snapshot'
 	classVariableNames: ''
 	poolDictionaries: ''
-	category: 'Monticello-UI'!
+	category: 'Monticello-Gemstone'!

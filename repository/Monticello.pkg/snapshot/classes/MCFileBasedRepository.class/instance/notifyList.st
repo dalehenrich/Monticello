@@ -3,6 +3,7 @@
 notifyList
 	| list |
 	(self allFileNames includes: 'notify') ifFalse: [^ #()].
-	^ self readStreamForFileNamed: 'notify' do:
-		[:s |
-		s upToEnd withSqueakLineEndings findTokens: (String with: Character cr)]! !
+	^ self readStreamForFileNamed: 'notify' 
+		onClient: self onClient 
+		do: [:s |
+			s upToEnd withSqueakLineEndings findTokens: (String with: Character cr)]! !

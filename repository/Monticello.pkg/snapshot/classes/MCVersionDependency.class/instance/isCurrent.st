@@ -1,6 +1,4 @@
 
 !MCVersionDependency methodsFor: 'testing'!
 isCurrent
-	^ package hasWorkingCopy
-		and: [self isFulfilled
-			and: [package workingCopy modified not]]! !
+	^ self isFulfilled and: [package workingCopy modified not]! !

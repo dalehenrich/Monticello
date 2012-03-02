@@ -1,4 +1,4 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 classAComment
 	^ self class classAComment! !

@@ -1,4 +1,0 @@
-
-!MCRepositoryInspector methodsFor: 'morphic ui'!
-versionList
-	^ self sortedVersions collect: [:ea | ea name]! !

@@ -16,5 +16,4 @@ comment: commentString
 			poolDictionaryNames: poolArray
 			classInstVarNames: civarArray
 			type: #normal
-			comment: commentString
-! !
+			comment: commentString! !

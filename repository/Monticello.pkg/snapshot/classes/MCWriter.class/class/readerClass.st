@@ -1,4 +1,4 @@
 
 !MCWriter class methodsFor: 'accessing'!
 readerClass
-	^ self subclassResponsibility ! !
+	^ self subclassResponsibility! !

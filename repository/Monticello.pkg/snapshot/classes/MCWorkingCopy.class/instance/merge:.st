@@ -21,8 +21,8 @@ merge: targetVersion
 				base: packageSnapshot
 				target: targetVersion snapshot
 				ancestor: ancestorSnapshot.
-	((MCMergeResolutionRequest new merger: merger)
-		signal: 'Merging ', targetVersion info name) = true ifTrue:
-			[merger loadWithNameLike: targetVersion info name.
+	(MCMergeResolutionRequest new merger: merger)
+		signal = true ifTrue:
+			[merger load.
 			ancestry addAncestor: targetVersion info].
 	self changed! !

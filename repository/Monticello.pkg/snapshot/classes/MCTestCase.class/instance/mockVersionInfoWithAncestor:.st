@@ -7,6 +7,5 @@ mockVersionInfoWithAncestor: aVersionInfo
 		message: self mockMessageString
 		date: Date today
 		time: Time now
-		author: Utilities authorInitials 
-		ancestors: {aVersionInfo}
-! !
+		author: MCPlatformSupport authorInitials 
+		ancestors: (Array with: aVersionInfo)! !

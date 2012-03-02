@@ -1,4 +1,4 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
-classRemoved: anEvent
-	self classModified: anEvent! !
+!MCPackageManager class methodsFor: 'notifications'!
+classRemoved: aSystemChangeAnnouncement
+	self classModified: aSystemChangeAnnouncement! !

@@ -1,6 +1,6 @@
 
 TestCase subclass: #MCTestCase
-	instanceVariableNames: ''
+	instanceVariableNames: 'saveAutoMigrate monticelloPackageModified'
 	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Monticello-Tests'!

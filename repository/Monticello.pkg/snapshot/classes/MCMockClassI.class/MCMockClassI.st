@@ -1,5 +1,5 @@
 
-Object weakSubclass: #MCMockClassI
+Object subclass: #MCMockClassI
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''

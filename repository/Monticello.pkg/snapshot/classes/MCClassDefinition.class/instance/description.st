@@ -1,5 +1,4 @@
 
 !MCClassDefinition methodsFor: 'accessing'!
 description
-	^ Array with: name
-! !
+	^ Array with: name! !

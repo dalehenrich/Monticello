@@ -10,4 +10,4 @@ mockDiffyVersion
 	repos storeVersion: base.
 	self change: #a toReturn: 'a2'.
 	next _ self mockVersionWithAncestor: base.
-	^ next asDiffAgainst: base	! !
+	^ next asDiffAgainst: base! !

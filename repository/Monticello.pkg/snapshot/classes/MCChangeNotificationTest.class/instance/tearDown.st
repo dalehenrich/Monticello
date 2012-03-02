@@ -1,4 +1,6 @@
 
 !MCChangeNotificationTest methodsFor: 'running'!
 tearDown
-	workingCopy unregister! !
+	workingCopy unregister.
+	super tearDown.
+! !

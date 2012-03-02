@@ -1,4 +1,4 @@
 
 !MCTestCase methodsFor: 'mocks'!
 mockClassB
-	^ Smalltalk at: #MCMockClassB! !
+	^ Smalltalk classNamed: #MCMockClassB! !

@@ -3,7 +3,7 @@
 testDescendants
 	| c1 a1 b3 q1 q2 c2 |
 	c1 _ self tree.
-	a1 _ self treeFrom: #(a1 (('00'))).
+	a1 _ self treeFrom: #(a1(('00'))).
 	b3 _ self treeFrom: #(b3
 				((b2
 					((b1
@@ -22,5 +22,4 @@ testDescendants
 	self assert: (c1 commonAncestorWith: q2) = q1.
 	c2 _ MCWorkingAncestry new addAncestor: c1.
 	self assert: (q2 commonAncestorWith: c2) = q1.
-	self assert: (c2 commonAncestorWith: q2) = q1.
-! !
+	self assert: (c2 commonAncestorWith: q2) = q1.! !

@@ -1,5 +1,5 @@
 
-Object variableByteSubclass: #MCMockClassH
+Object subclass: #MCMockClassH
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''

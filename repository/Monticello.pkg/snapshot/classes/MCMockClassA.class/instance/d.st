@@ -1,4 +1,4 @@
 
-!MCMockClassA methodsFor: 'as yet classified'!
+!MCMockClassA methodsFor: 'numeric'!
 d
 	^ 'd'! !

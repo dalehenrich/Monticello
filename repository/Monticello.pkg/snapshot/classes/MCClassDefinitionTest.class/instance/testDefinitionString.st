@@ -1,6 +1,6 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testDefinitionString
 	| d |
-	d _ self mockClassA asClassDefinition.
-	self assert: d definitionString = self mockClassA definition.! !
+	d := self mockClassA asClassDefinition.
+	self assert: d definitionString = self mockClassA definitionST80.! !

@@ -1,5 +1,6 @@
 
 !MCChangeNotificationTest methodsFor: 'running'!
 setUp
-	workingCopy _ MCWorkingCopy forPackage: self mockPackage.
-	! !
+	super setUp.
+	workingCopy := MCWorkingCopy forPackage: (MCPackage named: 'Monticello-Mocks').
+	workingCopy modified: false.! !

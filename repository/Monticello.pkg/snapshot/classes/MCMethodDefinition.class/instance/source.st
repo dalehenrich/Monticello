@@ -1,4 +1,4 @@
 
 !MCMethodDefinition methodsFor: 'accessing'!
 source
-	^ source! !
+	^ source trimBlanks! !

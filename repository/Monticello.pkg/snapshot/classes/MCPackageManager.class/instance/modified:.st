@@ -4,7 +4,7 @@ modified: aBoolean
      modified = aBoolean ifTrue: [^ self].
 	modified _ aBoolean.
 	self changed: #modified.
-	
+	self class changed: (Array with: #modified with: self).
+
 	modified ifFalse:
-		[(((Smalltalk classNamed: 'SmalltalkImage') ifNotNilDo: [:si | si current]) ifNil: [Smalltalk])
-			logChange: '"', self packageName, '"'].! !
+		[MCPlatformSupport logChangeFor: self packageName].! !

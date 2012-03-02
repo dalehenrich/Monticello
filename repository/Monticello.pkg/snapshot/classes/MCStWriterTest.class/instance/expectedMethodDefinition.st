@@ -2,7 +2,7 @@
 !MCStWriterTest methodsFor: 'data'!
 expectedMethodDefinition
 	^ '
-!!MCMockClassA methodsFor: ''numeric'' stamp: ''cwp 8/2/2003 17:26''!!
+!!MCMockClassA methodsFor: ''numeric'' stamp: ''dkh 02/25/2009 14:10''!!
 one
 	^ 1!! !!
 '! !

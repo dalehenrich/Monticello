@@ -2,7 +2,6 @@
 !MCChangeNotificationTest methodsFor: 'tests'!
 testForeignMethodModified
 	| event |
-	workingCopy modified: false.
 	event := self modifiedEventFor: #foreignMethod ofClass: self class.
-	MCWorkingCopy methodModified: event.
+	workingCopy class methodModified: event.
 	self deny: workingCopy modified! !

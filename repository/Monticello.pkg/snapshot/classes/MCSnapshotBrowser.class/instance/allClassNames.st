@@ -1,7 +1,5 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'class list'!
 allClassNames
-	^ (items 
-		select: [:ea | ea isOrganizationDefinition not] 
-		thenCollect: [:ea | ea className]) asSet.
-! !
+	^ ((self definitions
+		select: [:ea | ea isOrganizationDefinition not ]) collect: [:ea | ea className]) asSet! !

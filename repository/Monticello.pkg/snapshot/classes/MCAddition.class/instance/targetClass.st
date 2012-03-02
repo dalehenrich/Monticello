@@ -1,4 +1,4 @@
 
 !MCAddition methodsFor: 'accessing'!
 targetClass
-	^definition actualClass ! !
+	^definition actualClass! !

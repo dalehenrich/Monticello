@@ -1,4 +1,5 @@
 
-!MCSnapshotBrowser class methodsFor: 'as yet unclassified'!
+!MCSnapshotBrowser class methodsFor: 'instance creation'!
 forSnapshot: aSnapshot
-	^ self new snapshot: aSnapshot! !
+
+	^self new snapshot: aSnapshot! !

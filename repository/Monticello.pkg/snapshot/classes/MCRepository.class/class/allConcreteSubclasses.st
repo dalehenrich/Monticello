@@ -1,4 +1,6 @@
 
 !MCRepository class methodsFor: 'as yet unclassified'!
 allConcreteSubclasses
-	^ self withAllSubclasses reject: [:ea | ea isAbstract]! !
+	"Answer only the most useful classes"
+
+	^{MCDirectoryRepository. MCServerDirectoryRepository. MCHttpRepository.}! !

@@ -10,13 +10,13 @@ classInstVarNames: civarArray
 type: typeSymbol
 comment: commentString
 commentStamp: stampStringOrNil
-	name _ nameString asSymbol.
-	superclassName _ superclassString ifNil: ['nil'] ifNotNil: [superclassString asSymbol].
-	category _ categoryString.
-	name = #CompiledMethod ifTrue: [type _ #compiledMethod] ifFalse: [type _ typeSymbol].
-	comment _ commentString withSqueakLineEndings.
-	commentStamp _ stampStringOrNil ifNil: [self defaultCommentStamp].
-	variables _ OrderedCollection  new.
+	name := nameString asSymbol.
+	superclassName := superclassString ifNil: ['nil'] ifNotNil: [superclassString asSymbol].
+	category := categoryString.
+	type := typeSymbol.
+	comment := commentString withSqueakLineEndings.
+	commentStamp := stampStringOrNil ifNil: [self defaultCommentStamp].
+	variables := OrderedCollection  new.
 	self addVariables: ivarArray ofType: MCInstanceVariableDefinition.
 	self addVariables: cvarArray ofType: MCClassVariableDefinition.
 	self addVariables: poolArray ofType: MCPoolImportDefinition.

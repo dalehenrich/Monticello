@@ -1,5 +1,5 @@
 
 !MCMethodDefinition class methodsFor: 'as yet unclassified'!
 shutDown
-	WeakArray removeWeakDependent: Definitions.
+	MCPlatformSupport removeWeakArrayDependent: Definitions.
 	Definitions _ nil.! !

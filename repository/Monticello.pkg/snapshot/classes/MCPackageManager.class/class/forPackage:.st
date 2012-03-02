@@ -5,5 +5,5 @@ forPackage: aPackage
 		[|mgr|
 		mgr _ self new initializeWithPackage: aPackage.
 		self registry at: aPackage put: mgr.
-		self changed: #allManagers.
+		self changed: (Array with: #registered with: aPackage).
 		mgr]! !

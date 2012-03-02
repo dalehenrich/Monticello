@@ -5,5 +5,4 @@ updatePackage: aPackage withSnapshot: aSnapshot
 	packageSnap _ aPackage snapshot.
 	patch _ aSnapshot patchRelativeToBase: packageSnap.
 	patch applyTo: self.
-	packageSnap definitions do: [:ea | self provisions addAll: ea provisions]
-! !
+	packageSnap definitions do: [:ea | self provisions addAll: ea provisions]! !

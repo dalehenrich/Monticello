@@ -16,5 +16,4 @@ forMethodReference: aMethodReference
 						timeStamp: aMethodReference timeStamp
 						source: aMethodReference source.
 					self cachedDefinitions at: aMethodReference compiledMethod put: definition].
-	^ definition
-	! !
+	^ definition! !

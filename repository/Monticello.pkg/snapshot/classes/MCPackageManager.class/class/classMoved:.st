@@ -1,5 +1,5 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
-classMoved: anEvent
-	self classModified: anEvent.
-	self managersForCategory: anEvent oldCategory do:[:mgr| mgr modified: true].! !
+!MCPackageManager class methodsFor: 'notifications'!
+classMoved: aSystemChangeAnnouncement
+	self classModified: aSystemChangeAnnouncement.
+	self managersForCategory: aSystemChangeAnnouncement oldCategory do:[:mgr| mgr modified: true].! !

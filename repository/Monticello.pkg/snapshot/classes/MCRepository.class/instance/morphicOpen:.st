@@ -1,4 +1,4 @@
 
 !MCRepository methodsFor: 'interface'!
 morphicOpen: aWorkingCopy
-	self subclassResponsibility ! !
+	self subclassResponsibility! !

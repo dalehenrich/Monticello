@@ -1,5 +1,5 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 creationMessage
 	^ MessageSend
 		receiver: MCClassDefinition

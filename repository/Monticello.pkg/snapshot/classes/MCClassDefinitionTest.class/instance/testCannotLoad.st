@@ -1,5 +1,5 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testCannotLoad
 	| d |
 	d _  self mockClass: 'MCMockClassC' super: 'NotAnObject'.

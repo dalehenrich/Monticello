@@ -16,4 +16,4 @@ nextVersionName
 						ifTrue: [(each name copyAfterLast: $-) extractNumber]]) max]].
 
 	counter _ counter + 1.
-	^ branch, '-',  Utilities authorInitials, '.', counter asString! !
+	^ branch, '-',  MCPlatformSupport authorInitials, '.', counter asString! !

@@ -1,5 +1,5 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
+!MCPackageManager class methodsFor: 'private'!
 managersForClass: aClass category: methodCategory do: aBlock
 	(methodCategory isEmptyOrNil or:[methodCategory first ~= $*]) ifTrue:[
 		"Not an extension method"

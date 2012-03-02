@@ -1,6 +1,6 @@
 
 Object subclass: #MCRepository
 	instanceVariableNames: 'creationTemplate storeDiffs'
-	classVariableNames: 'Settings'
+	classVariableNames: ''
 	poolDictionaries: ''
 	category: 'Monticello-Repositories'!

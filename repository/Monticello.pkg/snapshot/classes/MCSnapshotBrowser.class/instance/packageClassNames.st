@@ -1,4 +1,5 @@
 
-!MCSnapshotBrowser methodsFor: 'accessing'!
+!MCSnapshotBrowser methodsFor: 'class list'!
 packageClassNames
-	^ self packageClasses collect: [:ea | ea className]! !
+	^ self packageClasses
+		collect: [:ea | ea className]! !

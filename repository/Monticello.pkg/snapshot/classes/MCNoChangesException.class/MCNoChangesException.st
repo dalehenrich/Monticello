@@ -1,5 +1,5 @@
 
-Exception subclass: #MCNoChangesException
+ExceptionA subclass: #MCNoChangesException
 	instanceVariableNames: ''
 	classVariableNames: ''
 	poolDictionaries: ''

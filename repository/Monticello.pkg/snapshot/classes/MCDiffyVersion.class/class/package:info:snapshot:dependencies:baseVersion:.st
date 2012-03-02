@@ -1,5 +1,5 @@
 
-!MCDiffyVersion class methodsFor: 'instance creation'!
+!MCDiffyVersion class methodsFor: 'as yet unclassified'!
 package: aPackage info: aVersionInfo snapshot: aSnapshot dependencies: aCollection baseVersion: aVersion
 	^ self 
 		package: aPackage

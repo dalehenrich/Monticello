@@ -3,5 +3,4 @@
 testStWriter
 	self
 		assertFileOutFrom: MCStWriter
-		canBeFiledInWith: [stream fileIn].
-! !
+		canBeFiledInWith: [stream fileIn].! !

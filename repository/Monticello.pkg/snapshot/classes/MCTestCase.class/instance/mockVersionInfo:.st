@@ -7,6 +7,5 @@ mockVersionInfo: tag
 		message: self mockMessageString, '-', tag asString
 		date: Date today
 		time: Time now
-		author: Utilities authorInitials 
-		ancestors: #()
-! !
+		author: MCPlatformSupport authorInitials 
+		ancestors: #()! !

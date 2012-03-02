@@ -5,6 +5,5 @@ loadVersionFile: fileName
 	version _ self versionFromFile: fileName.
 	version workingCopy repositoryGroup addRepository:
 		(MCDirectoryRepository new directory:
-			(FileDirectory on: (FileDirectory dirPathFor: fileName))).
-	version load.
-! !
+			(MCPlatformSupport fileDirectoryFor: fileName)).
+	version load.! !

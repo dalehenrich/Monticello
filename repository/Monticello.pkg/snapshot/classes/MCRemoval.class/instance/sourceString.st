@@ -2,6 +2,6 @@
 !MCRemoval methodsFor: 'accessing'!
 sourceString
 	^self fromSource asText
-		addAttribute: TextEmphasis struckOut;
+		addAttribute: TextEmphasis struckOut ;
 		addAttribute: TextColor blue;
 		yourself! !

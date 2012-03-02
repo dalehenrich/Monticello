@@ -1,5 +1,4 @@
 
 !MCVersionDependency methodsFor: 'testing'!
 isFulfilled
-	^package hasWorkingCopy
-		and: [self isFulfilledBy: package workingCopy ancestry]! !
+	^ self isFulfilledBy: package workingCopy ancestry! !

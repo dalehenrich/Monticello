@@ -16,5 +16,4 @@ testMergeIntoImageWithNoChanges
 	self snapshot.
 	self merge: revB.
 
-	self assert: (workingCopy ancestors size = 2)
-	! !
+	self assert: (workingCopy ancestors size = 2)! !

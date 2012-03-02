@@ -12,5 +12,4 @@ comment: commentString
 			classVarNames: #()
 			poolDictionaryNames: #()
 			classInstVarNames: #()
-			comment: commentString
-! !
+			comment: commentString! !

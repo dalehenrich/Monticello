@@ -1,5 +1,5 @@
 
-!MCClassDefinitionTest methodsFor: 'as yet unclassified'!
+!MCClassDefinitionTest methodsFor: 'tests'!
 testEquals
 	| a b |
 	a _ self mockClass: 'ClassA' super: 'SuperA'.

@@ -10,4 +10,10 @@ classNames
 			MCMockClassG
 			MCMockClassH
 			MCMockClassI
+			MCMockClassJ
+			MCMockClassK
+			MCMockClassKA
+			MCMockClassKB
+			MCMockClassL
+			MCMockClassM
 		)! !

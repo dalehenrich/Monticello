@@ -5,5 +5,4 @@ base: aSnapshot patch: aPatch
 	^ self new
 		addBaseSnapshot: aSnapshot;
 		applyPatch: aPatch;
-		yourself
-		! !
+		yourself! !

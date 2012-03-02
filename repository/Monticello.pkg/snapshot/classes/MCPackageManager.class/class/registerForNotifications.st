@@ -1,17 +1,33 @@
 
-!MCPackageManager class methodsFor: 'system changes'!
+!MCPackageManager class methodsFor: 'notifications'!
 registerForNotifications
-	Smalltalk at: #SystemChangeNotifier ifPresent:[:cls|
-	(cls uniqueInstance)
-		noMoreNotificationsFor: self;
-		notify: self ofSystemChangesOfItem: #class change: #Added using: #classModified:;
-		notify: self ofSystemChangesOfItem: #class change: #Modified using: #classModified:;
-		notify: self ofSystemChangesOfItem: #class change: #Renamed using: #classModified:;
-		notify: self ofSystemChangesOfItem: #class change: #Commented using: #classModified:;
-		notify: self ofSystemChangesOfItem: #class change: #Recategorized using: #classMoved:;
-		notify: self ofSystemChangesOfItem: #class change: #Removed using: #classRemoved:;
-		notify: self ofSystemChangesOfItem: #method change: #Added using: #methodModified:;
-		notify: self ofSystemChangesOfItem: #method change: #Modified using: #methodModified:;
-		notify: self ofSystemChangesOfItem: #method change: #Recategorized using: #methodMoved:;
-		notify: self ofSystemChangesOfItem: #method change: #Removed using: #methodRemoved:
-	].! !
+	"self registerForNotifications"
+
+	SystemChangeNotifier uniqueInstance
+		observe: ClassAddedAnnouncement
+		send: #classModified:
+		to: self;
+		observe: ClassCommentedAnnouncement
+		send: #classModified:
+		to: self;
+		observe: ClassModifiedAnnouncement
+		send: #classModified:
+		to: self;
+		observe: ClassMovedAnnouncement
+		send: #classMoved:
+		to: self;
+		observe: ClassRemovedAnnouncement
+		send: #classRemoved:
+		to: self;
+		observe: MethodAddedAnnouncement
+		send: #methodModified:
+		to: self;
+		observe: MethodModifiedAnnouncement
+		send: #methodModified:
+		to: self;
+		observe: MethodMovedAnnouncement
+		send: #methodMoved:
+		to: self;
+		observe: MethodRemovedAnnouncement
+		send: #methodRemoved:
+		to: self! !

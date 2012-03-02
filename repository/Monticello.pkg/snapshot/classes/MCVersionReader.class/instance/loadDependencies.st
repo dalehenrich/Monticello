@@ -1,4 +1,4 @@
 
 !MCVersionReader methodsFor: 'loading'!
 loadDependencies
-	self subclassResponsibility ! !
+	self subclassResponsibility! !

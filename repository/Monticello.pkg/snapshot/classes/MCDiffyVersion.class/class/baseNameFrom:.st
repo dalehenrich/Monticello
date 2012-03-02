@@ -1,5 +1,5 @@
 
-!MCDiffyVersion class methodsFor: 'name utilities'!
+!MCDiffyVersion class methodsFor: 'instance creation'!
 baseNameFrom: diffName
 	| baseId verName |
 	baseId := (diffName copyAfter: $() copyUpTo: $).

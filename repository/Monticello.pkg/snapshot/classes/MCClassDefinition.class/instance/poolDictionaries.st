@@ -1,4 +1,4 @@
 
 !MCClassDefinition methodsFor: 'accessing'!
 poolDictionaries
-	^ self selectVariables: #isPoolImport! !
+	^ (self selectVariables: #isPoolImport) collect: [:ea | ea asSymbol ]! !
