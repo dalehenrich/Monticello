@@ -1,0 +1,3 @@
+
+!MCVersionReader methodsFor: 'lifecycle'!
+initialize! !
