@@ -11,6 +11,7 @@ workingCopyTreeMenu: aMenu
 			('recompile package' #recompilePackage)
 			('revert package...' #revertPackage)
 			('unload package' #unloadPackage)
+			('trim ancestry' #trimAncestry)
 			('delete working copy' #deleteWorkingCopy)
 			('inspect working copy' #inspectWorkingCopy)).
 	(Smalltalk includesKey: #SARMCPackageDumper) ifTrue: [

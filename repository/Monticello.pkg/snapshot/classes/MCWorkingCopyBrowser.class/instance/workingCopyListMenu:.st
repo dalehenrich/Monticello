@@ -10,6 +10,7 @@ workingCopyListMenu: aMenu
 			('view history' #viewHistory)
 			('recompile package' #recompilePackage)
 			('revert package...' #revertPackage)
+			('trim ancestry' #trimAncestry)
 			('unload package' #unloadPackage)
 			('delete working copy' #deleteWorkingCopy)).
 	(Smalltalk includesKey: #SARMCPackageDumper) ifTrue: [
